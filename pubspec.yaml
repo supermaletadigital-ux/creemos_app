@@ -1,0 +1,75 @@
+name: creemos_santacruz
+description: Aplicación oficial de verificación de militantes - Creemos Santa Cruz
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.5.1
+  
+  # Navigation
+  go_router: ^14.2.0
+  
+  # Media & Capture
+  image_picker: ^1.1.0
+  camera: ^0.10.5+9
+  
+  # Location
+  geolocator: ^12.0.0
+  permission_handler: ^11.0.0
+  
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  firebase_storage: ^12.3.3
+  
+  # UI/UX
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.4.1
+  flutter_chat_ui: ^1.6.14
+  shimmer: ^3.0.0
+  
+  # Document Viewers
+  syncfusion_flutter_pdfviewer: ^25.1.35
+  video_player: ^2.9.1
+  chewie: ^1.8.1
+  
+  # Utilities
+  http: ^1.2.0
+  path_provider: ^2.1.0
+  url_launcher: ^6.3.0
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  shared_preferences: ^2.2.3
+  
+  # Image Processing
+  image: ^4.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/images/logo_creemos.png
+    - assets/images/hero_bg.jpg
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
