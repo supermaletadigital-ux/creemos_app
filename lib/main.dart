@@ -1,8 +1,9 @@
-import 'package:firebase_core/firebase_core.dart';
+// Updated Flutter imports
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+import 'package:flutter/material.dart';
+import 'package:your_package/your_package.dart'; // Replace with your actual package imports
+
+void main() {
   runApp(MyApp());
 }
 
@@ -10,12 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Creemos App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Creemos Santa Cruz'),
-        ),
-        body: Center(
-          child: Text('Welcome to Creemos Santa Cruz!'),
+          title: Text('Hello, Creemos!'),
         ),
       ),
     );
